@@ -1,0 +1,7 @@
+ext/platform/android/generated/jni/Externalstorage.cpp
+ext/platform/android/generated/jni/externalstorage_ruby_wrap.cpp
+ext/platform/android/generated/jni/externalstorage_js_wrap.cpp
+ext/platform/android/jni/Externalstorage_impl.cpp
+ext/shared/generated/externalstorage_api_init.cpp
+ext/shared/generated/externalstorage_js_api.cpp
+ext/shared/generated/externalstorage_ruby_api.c

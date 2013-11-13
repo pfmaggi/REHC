@@ -1,0 +1,9 @@
+ext/platform/android/generated/src/com/rho/externalstorage/ExternalstorageBase.java
+ext/platform/android/generated/src/com/rho/externalstorage/ExternalstorageFactorySingleton.java
+ext/platform/android/generated/src/com/rho/externalstorage/ExternalstorageSingletonBase.java
+ext/platform/android/generated/src/com/rho/externalstorage/IExternalstorage.java
+ext/platform/android/generated/src/com/rho/externalstorage/IExternalstorageFactory.java
+ext/platform/android/generated/src/com/rho/externalstorage/IExternalstorageSingleton.java
+ext/platform/android/src/com/rho/externalstorage/Externalstorage.java
+ext/platform/android/src/com/rho/externalstorage/ExternalstorageFactory.java
+ext/platform/android/src/com/rho/externalstorage/ExternalstorageSingleton.java

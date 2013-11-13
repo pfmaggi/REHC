@@ -1,0 +1,29 @@
+sdkversion: "4.0.0"
+name: "REHC"
+version: "1.0"
+vendor: "rhomobile"
+build: "debug"
+bbver: "6.0"
+applog: "rholog.txt"
+iphone:
+  configuration: "Release"
+  sdk: "iphonesimulator6.0"
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.rehc"
+  BundleURLScheme: "rehc"
+wp:
+  productid: "d2c47ba0-1df4-0131-80c7-000c292a2cb8"
+symbian:
+  uid: "0xe6f6ab1e"
+android:
+  version: "2.3.3"
+  emulator: "rhoAndroid21"
+extensions:
+  - barcode
+  - externalstorage
+  - rexml
+  - set
+app_type: "rhoelements"
+capabilities:
