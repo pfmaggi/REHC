@@ -20,6 +20,8 @@ Put in this folder a Config.xml and you're set.
 
 I've used the same syntax of the previous Config.xml but I only read the start path, and it needs to be a full path without macros like %INSTALLDIR%.
 
-See attached for a sample configuration and page (put the content of the archive on the SDCard in Android/data/REHC).
+See sample folder for a test APK and a sample configuration and page (put the content of the archive on the SDCard in Android/data/REHC).
 
-Test APK is available inside the [github REHC repository](https://github.com/pfmaggi/REHC).
+Ciao
+Pietro
+pietro.maggi@motorolasolutions.com

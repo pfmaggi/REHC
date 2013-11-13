@@ -1,8 +1,0 @@
-rhodes_path='C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0'
-app_version='1.0'
-app_name='REHC'
-reload_app_changes=0
-debug_port=
-debug_host='127.0.0.1'
-platform='iphone'
-ext_path=C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/commonAPI/coreapi;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/extensions/json;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-4.0.0/libs/barcode;C:/Maggi/src/workspace_4.0/REHC/extensions/externalstorage;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/extensions/rexml;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/extensions/set;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/extensions/audiocapture;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-4.0.0/libs/indicators;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhoelements-4.0.0/libs/hardwarekeys;C:/MotorolaRhoMobileSuite4.0.0/ruby/lib/ruby/gems/1.9.1/gems/rhodes-4.0.0/lib/commonAPI/sensor;
