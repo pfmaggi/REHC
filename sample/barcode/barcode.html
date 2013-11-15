@@ -1,0 +1,52 @@
+<html>
+<head>
+<script src="./rhoapi-modules.js"></script>
+<script>
+// Take Barcode callback, here we've the barcode and status params
+// - barcode
+// - status
+function fnTBCallback(params) {
+  if (params["status"]=="ok") {
+    alert('Barcode scanning complete. Scanned barcode: '+params["barcode"]);
+    document.getElementById("scanData").value = params["barcode"];
+  } else {
+    alert('Barcode scanning aborted');
+  }
+  Rho.Barcode.stop();
+}
+
+// Take Barcode and start the scanning (single shot, no HW button)
+function fnTakeBarcode() {
+  Rho.Barcode.take({}, fnTBCallback);
+  Rho.Barcode.start();
+}
+
+// Enable Barcode callback, here we've the full params:
+// - data
+// - source
+// - type
+// - time
+// - lenght
+// - direction
+function fnEBCallback(params) {
+  document.getElementById("scanData").value = params["data"];
+}
+
+// Enable Barcode, HW button will start the scanning
+function fnEnableBarcode() {
+  Rho.Barcode.enable({}, fnEBCallback);
+}
+
+</script>
+</head>
+<body>
+<h1>RhoElements v4.0 Barcode API</h1>
+
+<form action="#">
+<input type="text" id="scanData" value="100">
+<input type="button" value="Take Barcode" onclick="fnTakeBarcode();">
+<input type="button" value="Enable Barcode" onclick="fnEnableBarcode();">
+<input type="button" value="Quit App" onclick="Rho.Application.quit();">
+</form>
+</body>
+</html>
