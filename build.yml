@@ -20,10 +20,13 @@ symbian:
 android:
   version: "2.3.3"
   emulator: "rhoAndroid21"
+  android_title: 0
+  orientation: portrait
 extensions:
   - barcode
   - externalstorage
   - rexml
   - set
+  - wifi_config
 app_type: "rhoelements"
 capabilities:

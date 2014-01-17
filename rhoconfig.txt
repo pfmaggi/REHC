@@ -81,6 +81,12 @@ sync_poll_interval=0
 # set to 0 to reset the bulksync_state and trigger a bulk sync the next time rhodes synchronizes
 #bulksync_state = 1
 
+# disable the Android page loading progress bar
+disable_loading_indication = 1
+
+# disable screen rotation (enabled by default) - disable possible for ANDROID and iPhone ONLY
+disable_screen_rotation = 1
+
 # hides forward button and animates back button transition
 jqtouch_mode=1
 

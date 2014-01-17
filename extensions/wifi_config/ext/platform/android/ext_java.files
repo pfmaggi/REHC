@@ -1,0 +1,9 @@
+ext/platform/android/generated/src/com/rho/wificonfig/WifiConfigBase.java
+ext/platform/android/generated/src/com/rho/wificonfig/WifiConfigFactorySingleton.java
+ext/platform/android/generated/src/com/rho/wificonfig/WifiConfigSingletonBase.java
+ext/platform/android/generated/src/com/rho/wificonfig/IWifiConfig.java
+ext/platform/android/generated/src/com/rho/wificonfig/IWifiConfigFactory.java
+ext/platform/android/generated/src/com/rho/wificonfig/IWifiConfigSingleton.java
+ext/platform/android/src/com/rho/wificonfig/WifiConfig.java
+ext/platform/android/src/com/rho/wificonfig/WifiConfigFactory.java
+ext/platform/android/src/com/rho/wificonfig/WifiConfigSingleton.java

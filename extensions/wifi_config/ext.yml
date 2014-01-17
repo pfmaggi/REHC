@@ -1,0 +1,15 @@
+entry: Init_WifiConfig_extension
+javaentry: com.wificonfig.WifiConfig
+libraries: ["WifiConfig"]
+android:
+  source_list: ext/platform/android/ext_java.files
+wp8:
+  csharp_impl: yes
+  root_namespace: rho
+
+project_paths:
+  wp8: ext/platform/wp8/WifiConfigLib.vcxproj
+  wm: ext/platform/wm/WifiConfig.vcproj
+  win32: ext/platform/wm/WifiConfig.vcproj
+  
+xml_api_paths: ext/WifiConfig.xml
