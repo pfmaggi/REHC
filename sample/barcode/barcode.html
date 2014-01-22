@@ -37,6 +37,17 @@ function fnEnableBarcode() {
   Rho.Barcode.enable({}, fnEBCallback);
 }
 
+// get EAP Identity
+function fnGetIdentity() {
+  alert(Rho.WifiConfig.get_EAP_Identity('jlp_test'));
+}
+
+// get Signal Strength
+function fnGetSignalStrength() {
+  var signal_values = Rho.SignalIndicators.wlanStatus();
+  alert("Signal strength: " + signal_values.signalStrength + "\nESS ID: " + signal_values.essid + "\nMacAddress: " + signal_values.macAddress + "\nAdapterName: " + signal_values.adapterName + "\nDHCP Server: " + signal_values.dhcpServer + "\nDHCP Static: " + signal_values.dhcpStatic + "\nGateway: " + signal_values.gateway + "\nIP Address: " + signal_values.ipAddress + "\nRSSI: " + signal_values.rssi + "\nSubnet Mask: " + signal_values.subnetMask + "\nWins: " + signal_values.wins
+                );
+} 
 </script>
 </head>
 <body>
@@ -46,6 +57,8 @@ function fnEnableBarcode() {
 <input type="text" id="scanData" value="100">
 <input type="button" value="Take Barcode" onclick="fnTakeBarcode();">
 <input type="button" value="Enable Barcode" onclick="fnEnableBarcode();">
+<input type="button" value="Get EAP Identity" onclick="fnGetIdentity();">
+<input type="button" value="Get Signal Strength" onclick="fnGetSignalStrength();">
 <input type="button" value="Quit App" onclick="Rho.Application.quit();">
 </form>
 </body>

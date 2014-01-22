@@ -10,3 +10,6 @@ public/api/generated/
 # rhoSimulator
 rhosimulator/
 /rhosimulator
+
+# Apple clutter
+.DS_Store
