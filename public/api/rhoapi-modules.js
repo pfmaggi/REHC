@@ -11720,6 +11720,298 @@ var Rho = Rho || (function ($) {
 
 
 })(Rho.jQuery, Rho, Rho.util);
+// Module Rho.KeyCapture
+
+
+(function ($, rho, rhoUtil) {
+    'use strict';
+
+    var moduleNS = 'Rho.KeyCapture';
+    var apiReq = rhoUtil.apiReqFor(moduleNS);
+    var currentDefaultID = null;
+
+    // === KeyCapture class definition ===
+
+    function KeyCapture() {
+        var id = null;
+        this.getId = function () {return id;};
+
+        if (1 == arguments.length && arguments[0][rhoUtil.rhoIdParam()]) {
+            if (moduleNS != arguments[0][rhoUtil.rhoClassParam()]) {
+                throw "Wrong class instantiation!";
+            }
+            id = arguments[0][rhoUtil.rhoIdParam()];
+        } else {
+            id = rhoUtil.nextId();
+            // constructor methods are following:
+            
+        }
+    };
+
+    KeyCapture.getId = function() { return currentDefaultID; }
+
+    // === KeyCapture instance properties ===
+
+    rhoUtil.createPropsProxy(KeyCapture.prototype, [
+    ], apiReq, function(){ return this.getId(); });
+
+    // === KeyCapture instance methods ===
+
+    rhoUtil.createMethodsProxy(KeyCapture.prototype, [
+    
+    ], apiReq, function(){ return this.getId(); });
+
+    // === KeyCapture constants ===
+
+    
+            KeyCapture.IPHONE_VOLUME_UP = 10;
+    
+            KeyCapture.IPHONE_VOLUME_DOWN = 11;
+    
+
+
+    // === KeyCapture hash keys ===
+    
+    
+            KeyCapture.HK_KEY_VALUE = "keyValue"; 
+
+            KeyCapture.HK_TRIGGER_FLAG = "triggerFlag"; 
+
+
+    // === KeyCapture static properties ===
+
+    rhoUtil.createPropsProxy(KeyCapture, [
+        { propName: 'homeKeyValue', propAccess: 'rw' }
+    ], apiReq);
+
+    // === KeyCapture static methods ===
+
+    rhoUtil.createMethodsProxy(KeyCapture, [
+    
+          // function(/* bool */ dispatch, /* const rho::String& */ keyValue, /* optional function */ oResult)
+          { methodName: 'captureKey', nativeName: 'captureKey', persistentCallbackIndex: 2, valueCallbackIndex: 4 }
+    
+          // function(/* const rho::String& */ keyValue, /* const rho::String& */ remapTo, /* optional function */ oResult)
+        , { methodName: 'remapKey', nativeName: 'remapKey', valueCallbackIndex: 2 }
+    
+          // function(/* optional function */ oResult)
+        , { methodName: 'captureTrigger', nativeName: 'captureTrigger', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
+    
+    ], apiReq);
+
+    // === KeyCapture default instance support ===
+    
+
+    rhoUtil.namespace(moduleNS, KeyCapture);
+
+    
+
+
+
+})(Rho.jQuery, Rho, Rho.util);
+// Module Rho.CardReader
+
+
+(function ($, rho, rhoUtil) {
+    'use strict';
+
+    var moduleNS = 'Rho.CardReader';
+    var apiReq = rhoUtil.apiReqFor(moduleNS);
+    var currentDefaultID = null;
+
+    // === CardReader class definition ===
+
+    function CardReader() {
+        var id = null;
+        this.getId = function () {return id;};
+
+        if (1 == arguments.length && arguments[0][rhoUtil.rhoIdParam()]) {
+            if (moduleNS != arguments[0][rhoUtil.rhoClassParam()]) {
+                throw "Wrong class instantiation!";
+            }
+            id = arguments[0][rhoUtil.rhoIdParam()];
+        } else {
+            id = rhoUtil.nextId();
+            // constructor methods are following:
+            
+        }
+    };
+
+    CardReader.getId = function() { return currentDefaultID; }
+
+    // === CardReader instance properties ===
+
+    rhoUtil.createPropsProxy(CardReader.prototype, [
+        { propName: 'pinTimeout', propAccess: 'rw' }
+      , { propName: 'pinEntry', propAccess: 'rw' }
+      , { propName: 'panData', propAccess: 'rw' }
+      , { propName: 'autoTab', propAccess: 'rw' }
+      , { propName: 'autoEnter', propAccess: 'rw' }
+      , { propName: 'moduleName', propAccess: 'rw' }
+    ], apiReq, function(){ return this.getId(); });
+
+    // === CardReader instance methods ===
+
+    rhoUtil.createMethodsProxy(CardReader.prototype, [
+    
+          // function(/* optional function */ oResult)
+          { methodName: 'open', nativeName: 'open', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
+    
+          // function(/* optional function */ oResult)
+        , { methodName: 'close', nativeName: 'close', valueCallbackIndex: 0 }
+    
+          // function(/* const rho::String& */ propertyName, /* optional function */ oResult)
+        , { methodName: 'getProperty', nativeName: 'getProperty', persistentCallbackIndex: 1, valueCallbackIndex: 3 }
+    
+          // function(/* const rho::Vector<rho::String>& */ arrayofNames, /* optional function */ oResult)
+        , { methodName: 'getProperties', nativeName: 'getProperties', persistentCallbackIndex: 1, valueCallbackIndex: 3 }
+    
+          // function(/* optional function */ oResult)
+        , { methodName: 'getAllProperties', nativeName: 'getAllProperties', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
+    
+          // function(/* const rho::String& */ propertyName, /* const rho::String& */ propertyValue, /* optional function */ oResult)
+        , { methodName: 'setProperty', nativeName: 'setProperty', valueCallbackIndex: 2 }
+    
+          // function(/* const rho::Hashtable<rho::String, rho::String>& */ propertyMap, /* optional function */ oResult)
+        , { methodName: 'setProperties', nativeName: 'setProperties', valueCallbackIndex: 1 }
+    
+    ], apiReq, function(){ return this.getId(); });
+
+    // === CardReader constants ===
+
+    
+            CardReader.MSR9000 = 'msr9000'; 
+    
+            CardReader.MSR9001 = 'msr9001'; 
+    
+            CardReader.MSR9500 = 'msr9500'; 
+    
+            CardReader.MSRCAMEO = 'msrcameo'; 
+    
+            CardReader.MSR7000 = 'msr7000'; 
+    
+            CardReader.DCR7000 = 'dcr7000'; 
+    
+            CardReader.MSR55 = 'msr55'; 
+    
+            CardReader.MSR3000 = 'msr3000'; 
+    
+
+
+    // === CardReader hash keys ===
+    
+    
+            CardReader.HK_DATA = "data"; 
+
+            CardReader.HK_ENCRYPTION = "encryption"; 
+
+            CardReader.HK_KSN = "ksn"; 
+
+            CardReader.HK_MODE = "mode"; 
+
+            CardReader.HK_RAW_DATA = "rawData"; 
+
+            CardReader.HK_TRACK1 = "track1"; 
+
+            CardReader.HK_TRACK1_ENCRYPTED = "track1Encrypted"; 
+
+            CardReader.HK_TRACK1_ENCRYPTED_STATUS = "track1EncryptedStatus"; 
+
+            CardReader.HK_TRACK1_STATUS = "track1Status"; 
+
+            CardReader.HK_TRACK2 = "track2"; 
+
+            CardReader.HK_TRACK2_ENCRYPTED = "track2Encrypted"; 
+
+            CardReader.HK_TRACK2_ENCRYPTED_STATUS = "track2EncryptedStatus"; 
+
+            CardReader.HK_TRACK2_STATUS = "track2Status"; 
+
+            CardReader.HK_TRACK3 = "track3"; 
+
+            CardReader.HK_TRACK3_ENCRYPTED = "track3Encrypted"; 
+
+            CardReader.HK_TRACK3_ENCRYPTED_STATUS = "track3EncryptedStatus"; 
+
+            CardReader.HK_TRACK3_STATUS = "track3Status"; 
+
+
+    // === CardReader static properties ===
+
+    rhoUtil.createPropsProxy(CardReader, [
+    ], apiReq);
+
+    // === CardReader static methods ===
+
+    rhoUtil.createMethodsProxy(CardReader, [
+    
+          // function(/* optional function */ oResult)
+          { methodName: 'enumerate', nativeName: 'enumerate', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
+    
+    ], apiReq);
+
+    // === CardReader default instance support ===
+    
+
+        rhoUtil.createPropsProxy(CardReader, [
+            { propName: 'defaultInstance:getDefault:setDefault', propAccess: 'rw', customSet: function(obj) { if(!obj || 'function' != typeof obj.getId){ throw 'Default object should provide getId method!' }; currentDefaultID = obj.getId(); } }
+          , { propName: 'defaultID:getDefaultID:setDefaultID', propAccess: 'rw', customSet: function(id) { currentDefaultID = id; } }
+        ], apiReq);
+
+        CardReader.getId = function() {
+            if (null == currentDefaultID) {
+                currentDefaultID = CardReader.getDefaultID();
+            }
+            return currentDefaultID;
+        }
+
+        // === CardReader default instance properties ===
+
+        rhoUtil.createPropsProxy(CardReader, [
+            { propName: 'pinTimeout', propAccess: 'rw' }
+          , { propName: 'pinEntry', propAccess: 'rw' }
+          , { propName: 'panData', propAccess: 'rw' }
+          , { propName: 'autoTab', propAccess: 'rw' }
+          , { propName: 'autoEnter', propAccess: 'rw' }
+          , { propName: 'moduleName', propAccess: 'rw' }
+        ], apiReq, function(){ return this.getId(); });
+
+        // === CardReader default instance methods ===
+
+        rhoUtil.createMethodsProxy(CardReader, [
+        
+              // function(/* optional function */ oResult)
+              { methodName: 'open', nativeName: 'open', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
+        
+              // function(/* optional function */ oResult)
+            , { methodName: 'close', nativeName: 'close', valueCallbackIndex: 0 }
+        
+              // function(/* const rho::String& */ propertyName, /* optional function */ oResult)
+            , { methodName: 'getProperty', nativeName: 'getProperty', persistentCallbackIndex: 1, valueCallbackIndex: 3 }
+        
+              // function(/* const rho::Vector<rho::String>& */ arrayofNames, /* optional function */ oResult)
+            , { methodName: 'getProperties', nativeName: 'getProperties', persistentCallbackIndex: 1, valueCallbackIndex: 3 }
+        
+              // function(/* optional function */ oResult)
+            , { methodName: 'getAllProperties', nativeName: 'getAllProperties', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
+        
+              // function(/* const rho::String& */ propertyName, /* const rho::String& */ propertyValue, /* optional function */ oResult)
+            , { methodName: 'setProperty', nativeName: 'setProperty', valueCallbackIndex: 2 }
+        
+              // function(/* const rho::Hashtable<rho::String, rho::String>& */ propertyMap, /* optional function */ oResult)
+            , { methodName: 'setProperties', nativeName: 'setProperties', valueCallbackIndex: 1 }
+        
+        ], apiReq, function(){ return this.getId(); });
+
+    
+
+    rhoUtil.namespace(moduleNS, CardReader);
+
+    
+
+
+
+})(Rho.jQuery, Rho, Rho.util);
 // Module Rho.Battery
 
 
@@ -12060,95 +12352,6 @@ var Rho = Rho || (function ($) {
     
 
     rhoUtil.namespace(moduleNS, SignalIndicators);
-
-    
-
-
-
-})(Rho.jQuery, Rho, Rho.util);
-// Module Rho.KeyCapture
-
-
-(function ($, rho, rhoUtil) {
-    'use strict';
-
-    var moduleNS = 'Rho.KeyCapture';
-    var apiReq = rhoUtil.apiReqFor(moduleNS);
-    var currentDefaultID = null;
-
-    // === KeyCapture class definition ===
-
-    function KeyCapture() {
-        var id = null;
-        this.getId = function () {return id;};
-
-        if (1 == arguments.length && arguments[0][rhoUtil.rhoIdParam()]) {
-            if (moduleNS != arguments[0][rhoUtil.rhoClassParam()]) {
-                throw "Wrong class instantiation!";
-            }
-            id = arguments[0][rhoUtil.rhoIdParam()];
-        } else {
-            id = rhoUtil.nextId();
-            // constructor methods are following:
-            
-        }
-    };
-
-    KeyCapture.getId = function() { return currentDefaultID; }
-
-    // === KeyCapture instance properties ===
-
-    rhoUtil.createPropsProxy(KeyCapture.prototype, [
-    ], apiReq, function(){ return this.getId(); });
-
-    // === KeyCapture instance methods ===
-
-    rhoUtil.createMethodsProxy(KeyCapture.prototype, [
-    
-    ], apiReq, function(){ return this.getId(); });
-
-    // === KeyCapture constants ===
-
-    
-            KeyCapture.IPHONE_VOLUME_UP = 10;
-    
-            KeyCapture.IPHONE_VOLUME_DOWN = 11;
-    
-
-
-    // === KeyCapture hash keys ===
-    
-    
-            KeyCapture.HK_KEY_VALUE = "keyValue"; 
-
-            KeyCapture.HK_TRIGGER_FLAG = "triggerFlag"; 
-
-
-    // === KeyCapture static properties ===
-
-    rhoUtil.createPropsProxy(KeyCapture, [
-        { propName: 'homeKeyValue', propAccess: 'rw' }
-    ], apiReq);
-
-    // === KeyCapture static methods ===
-
-    rhoUtil.createMethodsProxy(KeyCapture, [
-    
-          // function(/* bool */ dispatch, /* const rho::String& */ keyValue, /* optional function */ oResult)
-          { methodName: 'captureKey', nativeName: 'captureKey', persistentCallbackIndex: 2, valueCallbackIndex: 4 }
-    
-          // function(/* const rho::String& */ keyValue, /* const rho::String& */ remapTo, /* optional function */ oResult)
-        , { methodName: 'remapKey', nativeName: 'remapKey', valueCallbackIndex: 2 }
-    
-          // function(/* optional function */ oResult)
-        , { methodName: 'captureTrigger', nativeName: 'captureTrigger', persistentCallbackIndex: 0, valueCallbackIndex: 2 }
-    
-    ], apiReq);
-
-    // === KeyCapture default instance support ===
-    
-
-    rhoUtil.namespace(moduleNS, KeyCapture);
 
     
 

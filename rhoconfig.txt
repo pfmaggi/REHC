@@ -59,7 +59,7 @@ sync_poll_interval=0
 #full_screen = 1
 
 # disable the Android page loading progress bar
-#disable_loading_indication = 0
+disable_loading_indication = 0
 
 # Port of the local (embedded) HTTP server. This parameter is mainly for debug purposes.
 # If not specified, application will use dynamically selected one.
@@ -70,7 +70,7 @@ sync_poll_interval=0
 #wm_show_statusbar = 1
 
 # disable screen rotation (enabled by default) - disable possible for ANDROID and iPhone ONLY
-#disable_screen_rotation = 1
+disable_screen_rotation = 1
 
 # disable close app when pressing back on home screen on blackberry
 #bb_disable_closebyback = 0
@@ -81,15 +81,15 @@ sync_poll_interval=0
 # set to 0 to reset the bulksync_state and trigger a bulk sync the next time rhodes synchronizes
 #bulksync_state = 1
 
-# disable the Android page loading progress bar
-disable_loading_indication = 1
-
-# disable screen rotation (enabled by default) - disable possible for ANDROID and iPhone ONLY
-disable_screen_rotation = 1
-
 # hides forward button and animates back button transition
 jqtouch_mode=1
 
 splash_screen='zoom'
 
 use_bb_full_browser=6
+
+# Intercept back and menu button
+rehc_intercept_button = 1
+
+# Read Configuration from fully qualified bundle name
+rehc_use_bundle_url = 0

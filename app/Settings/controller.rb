@@ -6,6 +6,10 @@ require 'helpers/browser_helper'
 class SettingsController < Rho::RhoController
   include BrowserHelper
   
+  def keyCallback
+      Rho::Log.info("this key has just been pressed!: " + @params["keyValue"].to_s,"APP")
+  end
+
   def index
     @msg = @params['msg']
     render

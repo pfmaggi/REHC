@@ -1,7 +1,9 @@
 sdkversion: "4.0.0"
 name: "REHC"
 version: "1.0"
-vendor: "rhomobile"
+# change this to modify the package name under android
+#vendor: "rhomobile"
+vendor: "johnlewis"
 build: "debug"
 bbver: "6.0"
 applog: "rholog.txt"
@@ -21,12 +23,20 @@ android:
   version: "2.3.3"
   emulator: "rhoAndroid21"
   android_title: 0
-  orientation: portrait
+  orientation: "portrait"
+  capabilities: 
+# Use this to set certificate for Android sproduction build
+#  production:
+#    certificate: path/to/your/developer/certificate
+#    password: "password-of-the-certificate"
+#    alias: "keystore.alias"
 extensions:
   - barcode
   - externalstorage
   - rexml
   - set
   - wifi_config
+  - hardwarekeys
 app_type: "rhoelements"
 capabilities:
+  - sdcard
