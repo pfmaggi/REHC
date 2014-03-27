@@ -53,7 +53,7 @@
 		
 			<General>
 				<Name value="Menu"/>
-				<StartPage value="file:///storage/sdcard/Android/data/REHC/barcode.html" name="Menu"/>
+				<StartPage value="file:///storage/sdcard/Android/data/rehc/barcode.html" name="Menu"/>
 			</General>
 			
 			<HTTP_Proxy value=""/>

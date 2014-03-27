@@ -5,7 +5,7 @@ RhoElements Hybrid Container for Android.
 
 RhoMobile Suite v4.0 started to walk away from the Industrial Browser use case for RhoElements with the decision to not release and Android version of the Shared Runtime.
 The transition to two different products will be complete by the time we're going to release RhoMobile Suite v4.2.
-In the meanwhile I've built this sample project that shows how to build WebApp container, or a **R**ho**E**lement **H**ybrid **C**ontainer, for Android as described in the [documentation](http://docs.rhomobile.com/guide/webcontainer)
+In the meanwhile I've built this sample project that shows how to build WebApp container, or a **R**ho**E**lement **H**Ybrid **C**ontainer, for Android as described in the [documentation](http://docs.rhomobile.com/guide/webcontainer)
 
 I'm building such a sample project with a very clear scope:
 
@@ -43,6 +43,5 @@ Latest version introduce a couple of configuration flag that are available in th
       rehc_use_bundle_url = 0
 
 
-Ciao
-Pietro
+
 @real_nibble
